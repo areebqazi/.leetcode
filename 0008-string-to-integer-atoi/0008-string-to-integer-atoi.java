@@ -3,8 +3,6 @@ class Solution {
         s=s.trim();
         if(s.length()==0)
             return 0;
-        if(s.length()==1 && !Character.isDigit(s.charAt(0)))
-            return 0;
         char sign='+';
         if(s.charAt(0)=='-')
             sign='-';
@@ -20,9 +18,9 @@ class Solution {
         }        
         if(ss.length()==0)
             return 0;
+        
         if(ss.length()>10)
             return retM(sign);
-        
         else if(ss.length()<10)
             return retI(sign,ss);
         
