@@ -17,7 +17,6 @@ class Solution {
            sb.setCharAt(i,k);
            j--;
        }
-        System.out.println(sb);
         if(sb.length()<10){
             if(sign=='-')
             sb.insert(0,'-');
