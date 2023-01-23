@@ -17,7 +17,6 @@ class Solution {
     HashSet<Integer>set=new HashSet<>();
     public boolean findTarget(TreeNode root, int k) {
         find(root);
-        System.out.println(set);
          for(int i:set){
              if(set.contains(k-i) && k-i != i )
                  return true;
