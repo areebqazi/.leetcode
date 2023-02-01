@@ -6,10 +6,12 @@ class Solution {
         return str1.substring(0, gcd(str1.length(),str2.length()));
     }
     public int gcd(int x, int y) {
-            if (y == 0) {
-                return x;
-            } else {
-                return gcd(y, x % y);
+        int gcd=0;
+          for(int i = 1; i <= x && i <= y; i++)  
+           {  
+            if(x%i==0 && y%i==0)  
+            gcd = i;  
             }    
+        return gcd;
     }
 }
