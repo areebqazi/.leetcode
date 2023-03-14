@@ -4,20 +4,29 @@ class Solution {
             return "1";
         String s="1";
         for(int k=2;k<=n;k++){
-        String ss="";
-        for(int i=0;i<s.length();){
-            int count=1;
-            int no=s.charAt(i)-'0';
-            int j=i+1;
-            while(j<s.length()  && (s.charAt(j)-'0')==no){
-                count++;
-                j++;
-            }
-            ss+=count+""+no;
-            i=i+count;
-        }
-            s=ss;
+        s=say(s);
         }
         return s;
     }
+    
+String say(String s){
+    String ss="";
+    int no=s.charAt(0)-'0';
+    int count=0;
+    for(int i=0;i<s.length();i++){
+         if(s.charAt(i)-'0'==no){
+            count++;
+        } else {
+        ss+=count+""+no;
+        no=s.charAt(i)-'0';
+        count=1;
+        }
+    }
+    if(count>0)
+        ss+=count+""+no;
+    return ss;
+   }
 }
+
+
+
