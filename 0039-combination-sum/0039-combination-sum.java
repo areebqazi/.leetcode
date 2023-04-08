@@ -15,15 +15,10 @@ class Solution {
         }
        result.add(arr[index]);
        if(target-arr[index]>=0){
-          target-=arr[index];
-          sum(index,target,arr,result,n);
-          target+=arr[index];
-          result.remove(result.size()-1);
-          sum(index+1,target,arr,result,n);
+          sum(index,target-arr[index],arr,result,n);
         }
-        else{
        result.remove(result.size()-1);
        sum(index+1,target,arr,result,n);
-        }
+        
    }
 }
