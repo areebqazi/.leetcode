@@ -1,24 +1,28 @@
+// approach  1 in notes
 class Solution {
     public List<List<Integer>> permute(int[] nums) {
-        List<Integer>ds=new ArrayList<>();
-        List<List<Integer>>result=new ArrayList<>();
-        boolean arr[]=new boolean[nums.length];
-        perm(nums,ds,result,arr);
-        return result;
+        List<List<Integer>>ans=new ArrayList<>();
+        perm(0,nums,ans);
+        return ans;
     }
-    public void perm(int nums[],List<Integer>ds,List<List<Integer>>result,boolean check[]){
-        if(ds.size()==nums.length){
-            result.add(new ArrayList<>(ds));
-            return ;
+    public void perm(int index,int arr[],List<List<Integer>>result){
+        if(index==arr.length){
+            List<Integer>temp=new ArrayList<>();
+            for(int i:arr)
+                temp.add(i);
+            result.add(temp);
+            return;
         }
-        for(int i=0;i<nums.length;i++){
-            if(check[i]!=true){
-                ds.add(nums[i]);
-                check[i]=true;
-                perm(nums,ds,result,check);
-                ds.remove(ds.size()-1);
-                check[i]=false;
-            }
+        for(int i=index;i<arr.length;i++){
+            swap(arr,i,index);
+            perm(index+1,arr,result);
+            swap(arr,i,index);
         }
+    }
+    public void swap (int arr[],int a,int b){
+        int temp=arr[a];
+        arr[a]=arr[b];
+        arr[b]=temp;
+        return;
     }
 }
