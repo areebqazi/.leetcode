@@ -7,22 +7,23 @@ class Solution {
                 board[i][j] = '.';
             }
         }
-        queen(0, n, board);
-        return count;
+        
+        return queen(0, n, board);
     }
     
-    public void queen(int col, int n, char[][] board) {
+    public int queen(int col, int n, char[][] board) {
         if (col == n) {
-            count++;
-            return;
+            return 1;
         }
+        int count=0;
         for (int row = 0; row < n; row++) {
             if (isSafe(row, col, n, board)) {
                 board[row][col] = 'Q';
-                queen(col + 1, n, board);
+                count = count + queen(col + 1, n, board);
                 board[row][col] = '.';
             }
         }
+        return count;
     }
     
     public boolean isSafe(int row, int col, int n, char[][] board) {
