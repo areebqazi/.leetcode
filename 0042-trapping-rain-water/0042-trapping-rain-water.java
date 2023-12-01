@@ -7,18 +7,18 @@ class Solution {
         int maxL=height[0];
         int maxR=height[height.length-1];
         while(l<r){
+            int temp;
             if(maxL<=maxR){
-                int temp = maxL-height[l];
-                if(temp>0) sum+=temp;
+                temp = maxL-height[l];
                 l++;
                 maxL=Math.max(height[l],maxL);
             }
             else{
-                int temp = maxR-height[r];
-                if(temp>0) sum+=temp;
+                temp = maxR-height[r];
                 r--;
                 maxR=Math.max(height[r],maxR);
             }
+            if(temp>0) sum+=temp;
         }
     return sum;
     }
