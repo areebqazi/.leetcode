@@ -1,34 +1,30 @@
 class Solution {
     public int findShortestSubArray(int[] nums) {
-       int ans = Integer.MAX_VALUE;
-        Map<Integer, Integer> count = new HashMap<>();
-        Map<Integer, Integer> startIndex = new HashMap<>();
-        Map<Integer, Integer> endIndex = new HashMap<>();
-
-        for (int i = 0; i < nums.length; i++) {
-            count.put(nums[i], count.getOrDefault(nums[i], 0) + 1);
+       int arr[]=new int[50000];
+        int large=0;
+        for(int i:nums){
+            arr[i]++;
+            large=Math.max(arr[i],large);
         }
-
-        for (int i = 0; i < nums.length; i++) {
-            int no = nums[i];
-            if (!startIndex.containsKey(no)) {
-                startIndex.put(no, i);
-            }
-            endIndex.put(no, i);
-        }
-
-        int degree = Integer.MIN_VALUE;
-        for (Integer key : count.keySet()) {
-            degree = Math.max(degree, count.get(key));
-        }
-
-        for (Integer key : count.keySet()) {
-            if (count.get(key) == degree) {
-                int arraySize = endIndex.get(key) - startIndex.get(key) + 1;
-                ans = Math.min(ans, arraySize);
+        int min=Integer.MAX_VALUE;
+        for(int i:nums){
+            if(arr[i]==large){
+                min = Math.min((lastIndexOf(nums,i)-indexOf(nums,i)+1),min);
             }
         }
-
-        return ans; 
+        return min;
     }
+    public int indexOf(int nums[],int n ){
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]==n) return i;
+        }
+        return -1;
+    }
+    public int lastIndexOf(int nums[],int n ){
+        for(int i=nums.length-1;i>=0 ;i--){
+            if(nums[i]==n) return i;
+        }
+        return -1;
+    }
+    
 }
