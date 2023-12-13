@@ -11,11 +11,11 @@ class Solution {
             }
             int mid = (s+e)/2;
             result = Math.min(result,nums[mid]);
-            if(nums[s]<=nums[mid]){
-                s=mid+1;
+            if(nums[mid]<=nums[e]){
+                e=mid-1;
             }
             else{
-                e=mid-1;
+                s=mid+1;
             }
         }
         return result;
