@@ -1,17 +1,10 @@
 class Solution {
     public boolean increasingTriplet(int[] nums) {
-        int small = Integer.MAX_VALUE;        
-        int mid = Integer.MAX_VALUE;
+         int low = Integer.MAX_VALUE , med = Integer.MAX_VALUE;
         for(int i:nums){
-            if(i<=small){
-                small=i;
-            }
-            else if (i<=mid){
-                mid = i;
-            }
-            else{
-                return true;
-            }
+          if(i<low)  low=i;
+          if(i>low && i<med)  med=i;
+          if(i>low && i>med) return true;
         }
         return false;
     }
