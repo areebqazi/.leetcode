@@ -1,13 +1,9 @@
 class Solution {
     public int hIndex(int[] citations) {
-        int maxElement = Arrays.stream(citations).max().getAsInt();
-        int arr[] = new int[maxElement+1];
-        for(int i:citations)  arr[i]++;
-        int count = 0 ;
-        for(int i = arr.length-1; i>=0 ; i--){
-            count+=arr[i];
-            if(count>=i) return i;
+        Arrays.sort(citations);
+        for(int i=0;i<citations.length;i++){
+            if(citations[i] >= citations.length-i) return citations.length-i;
         }
-        return 0 ;
+        return 0;
     }
 }
