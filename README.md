@@ -12,12 +12,30 @@ feel free to suggest some better solutions
 |  |
 | ------- |
 | [0274-h-index](https://github.com/areebqazi/.leetcode/tree/master/0274-h-index) |
+| [1966-frequency-of-the-most-frequent-element](https://github.com/areebqazi/.leetcode/tree/master/1966-frequency-of-the-most-frequent-element) |
 ## Sorting
 |  |
 | ------- |
 | [0274-h-index](https://github.com/areebqazi/.leetcode/tree/master/0274-h-index) |
+| [1966-frequency-of-the-most-frequent-element](https://github.com/areebqazi/.leetcode/tree/master/1966-frequency-of-the-most-frequent-element) |
 ## Counting Sort
 |  |
 | ------- |
 | [0274-h-index](https://github.com/areebqazi/.leetcode/tree/master/0274-h-index) |
+## Binary Search
+|  |
+| ------- |
+| [1966-frequency-of-the-most-frequent-element](https://github.com/areebqazi/.leetcode/tree/master/1966-frequency-of-the-most-frequent-element) |
+## Greedy
+|  |
+| ------- |
+| [1966-frequency-of-the-most-frequent-element](https://github.com/areebqazi/.leetcode/tree/master/1966-frequency-of-the-most-frequent-element) |
+## Sliding Window
+|  |
+| ------- |
+| [1966-frequency-of-the-most-frequent-element](https://github.com/areebqazi/.leetcode/tree/master/1966-frequency-of-the-most-frequent-element) |
+## Prefix Sum
+|  |
+| ------- |
+| [1966-frequency-of-the-most-frequent-element](https://github.com/areebqazi/.leetcode/tree/master/1966-frequency-of-the-most-frequent-element) |
 <!---LeetCode Topics End-->
