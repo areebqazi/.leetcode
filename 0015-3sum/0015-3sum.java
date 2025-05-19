@@ -1,33 +1,29 @@
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
-        HashMap<Integer,Integer>map=new HashMap<>();
-        Set<List<Integer>> set = new HashSet<List<Integer>>();
-
-        List<List<Integer>>a=new ArrayList<>();
-        for(int i=0;i<nums.length;i++)
-            map.put(nums[i],i);
-        
-        for(int i=0;i<nums.length;i++){
-            
-            for(int j=0;j<nums.length;j++){
-                
-                ArrayList<Integer>b=new ArrayList<>();
-                int no=0-nums[i]-nums[j];
-                
-         if(map.get(no)!=null && i!=j && map.get(no)!=i && map.get(no)!=j){ 
-             
-                int max = Math.max(nums[i], Math.max(nums[j], no));
-                int min = Math.min(nums[i], Math.min(nums[j], no));
-                int mid = nums[i] + nums[j] + no - max - min;
-                    b.add(min);
-                    b.add(mid);
-                    b.add(max);
-                    set.add(b);
-                }
+        Arrays.sort(nums);
+        int l = 0 , r = nums.length-1;
+        HashSet<List<Integer>> set = new HashSet<>();
+        List<List<Integer>> list  = new ArrayList<>();
+        for(int i = 0 ; i < nums.length ;i++) {
+            if(i>0 && nums[i]==nums[i-1])
+                continue;
+            pair(nums,0 - nums[i],i+1,set);
+        }
+        for(List<Integer>temp:set) list.add(temp);
+        return list;
+    }
+    public void pair(int numbers[], int target , int i,HashSet<List<Integer>> set){
+        int j = numbers.length - 1;
+        while (i < j) {
+            int sum = numbers[i] + numbers[j];
+            if (sum == target) {
+                List<Integer> temp = Arrays.asList(-1*target, numbers[i], numbers[j]);
+                set.add(temp);
+                i++;j--;
+            } else {
+                if (sum > target) j--;
+                else i++;
             }
         }
-        for(List<Integer>bb:set)
-            a.add(bb);
-        return (a);
     }
 }
