@@ -11,6 +11,7 @@ feel free to suggest some better solutions
 ## Array
 |  |
 | ------- |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/areebqazi/.leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0274-h-index](https://github.com/areebqazi/.leetcode/tree/master/0274-h-index) |
 | [1966-frequency-of-the-most-frequent-element](https://github.com/areebqazi/.leetcode/tree/master/1966-frequency-of-the-most-frequent-element) |
 ## Sorting
@@ -25,6 +26,7 @@ feel free to suggest some better solutions
 ## Binary Search
 |  |
 | ------- |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/areebqazi/.leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [1966-frequency-of-the-most-frequent-element](https://github.com/areebqazi/.leetcode/tree/master/1966-frequency-of-the-most-frequent-element) |
 ## Greedy
 |  |
@@ -38,4 +40,8 @@ feel free to suggest some better solutions
 |  |
 | ------- |
 | [1966-frequency-of-the-most-frequent-element](https://github.com/areebqazi/.leetcode/tree/master/1966-frequency-of-the-most-frequent-element) |
+## Two Pointers
+|  |
+| ------- |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/areebqazi/.leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 <!---LeetCode Topics End-->
