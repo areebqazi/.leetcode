@@ -47,4 +47,8 @@ feel free to suggest some better solutions
 | ------- |
 | [0015-3sum](https://github.com/areebqazi/.leetcode/tree/master/0015-3sum) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/areebqazi/.leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+## Database
+|  |
+| ------- |
+| [1908-recyclable-and-low-fat-products](https://github.com/areebqazi/.leetcode/tree/master/1908-recyclable-and-low-fat-products) |
 <!---LeetCode Topics End-->
