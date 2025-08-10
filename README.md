@@ -50,5 +50,6 @@ feel free to suggest some better solutions
 ## Database
 |  |
 | ------- |
+| [1415-students-and-examinations](https://github.com/areebqazi/.leetcode/tree/master/1415-students-and-examinations) |
 | [1908-recyclable-and-low-fat-products](https://github.com/areebqazi/.leetcode/tree/master/1908-recyclable-and-low-fat-products) |
 <!---LeetCode Topics End-->
