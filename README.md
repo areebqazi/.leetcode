@@ -50,6 +50,7 @@ feel free to suggest some better solutions
 ## Database
 |  |
 | ------- |
+| [1317-monthly-transactions-i](https://github.com/areebqazi/.leetcode/tree/master/1317-monthly-transactions-i) |
 | [1338-queries-quality-and-percentage](https://github.com/areebqazi/.leetcode/tree/master/1338-queries-quality-and-percentage) |
 | [1415-students-and-examinations](https://github.com/areebqazi/.leetcode/tree/master/1415-students-and-examinations) |
 | [1908-recyclable-and-low-fat-products](https://github.com/areebqazi/.leetcode/tree/master/1908-recyclable-and-low-fat-products) |
